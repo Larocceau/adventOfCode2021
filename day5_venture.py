@@ -7,11 +7,6 @@ file = open(fileName)
 
 lineToPoints = lambda line: [[ int(point) for point in points.split(",")] for points in line.split("->")]
 
-
-def checkIfHorOrVert(cord1, cord2):
-    return cord1[0] == cord2[0] or cord1[2] ==cord2[2]
-
-
 class Grid:
     grid = [[0]]
     def __str__(self):
